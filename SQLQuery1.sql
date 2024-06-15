@@ -1,0 +1,2 @@
+CREATE DATABASE telcomax_churn_analysis
+USE telcomax_churn_analysis
