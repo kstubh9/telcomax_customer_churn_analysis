@@ -316,17 +316,17 @@ ORDER BY
 ### DAX Measures
 Below are some of the DAX Measures used in the report.
 
-**1. Average Tenure of Churned Customers
+**1. Average Tenure of Churned Customers**
 ```dax
 Average Tenure of churned = CALCULATE([Total Tenure Churned]/[Count of churned])
 ```
 
-**2. Average Tenure of Non-Churned Customers
+**2. Average Tenure of Non-Churned Customers**
 ```dax
 Average Tenure of Not churned = CALCULATE([Total Tenure Not Churned]/[Count of not churned])
 ```
 
-**3. Average Monthly Charges of Churned Customers
+**3. Average Monthly Charges of Churned Customers**
 ```dax
 AvgMonthlyCharges_Churned = 
 CALCULATE(
@@ -335,7 +335,7 @@ CALCULATE(
 )
 ```
 
-**4. Average Monthly Charges of Non-Churned Customers
+**4. Average Monthly Charges of Non-Churned Customers**
 ```dax
 AvgMonthlyCharges_NonChurned = 
 CALCULATE(
@@ -344,7 +344,7 @@ CALCULATE(
 )
 ```
 
-**5. Average Tenure of Churned Customers (in Months Format)
+**5. Average Tenure of Churned Customers (in Months Format)**
 ```dax
 AvgTenure_Churned = 
 VAR Churned = 
@@ -356,13 +356,13 @@ RETURN
     FORMAT(Churned, "0") & " Months"
 ```
 
-**6. Churn Rate of Customers with Partners
+**6. Churn Rate of Customers with Partners**
 ```dax
 Churn Rate of customers having partners = 
 DIVIDE([Churned customers having partners], [Total Customers having partners])
 ```
 
-**7. Churn Rate of Customers without Partners
+**7. Churn Rate of Customers without Partners**
 ```dax
 Churn Rate of Customers Without Partners = DIVIDE([Churned customers not having partners], [Total Customers not having partners])
 ```
@@ -387,9 +387,7 @@ Churn Rate of Customers Without Partners = DIVIDE([Churned customers not having 
 
 ![image](https://github.com/kstubh9/telcomax_customer_churn_analysis/assets/82211890/f06bb47f-a505-40c9-9a6a-61b131b26411)
 
-![image](https://github.com/kstubh9/telcomax_customer_churn_analysis/assets/82211890/32f84bcd-f9c6-4332-8b5a-2803bbbb1632)
-
-![image](https://github.com/kstubh9/telcomax_customer_churn_analysis/assets/82211890/48256fcb-5b39-4890-a674-c6cac9bb211f)
+![image](https://github.com/kstubh9/telcomax_customer_churn_analysis/assets/82211890/32f84bcd-f9c6-4332-8b5a-2803bbbb1632) ![image](https://github.com/kstubh9/telcomax_customer_churn_analysis/assets/82211890/48256fcb-5b39-4890-a674-c6cac9bb211f)
 
 ![image](https://github.com/kstubh9/telcomax_customer_churn_analysis/assets/82211890/af984030-ebc3-4921-ad73-5f9eab09d688)
 
